@@ -22,13 +22,13 @@ void createAccount(int accno,String name,long bal) {
 	this.balance=bal;
 }
 void addAmount(int amount) {
-	this.balance=amount;
+	this.balance=this.balance+amount;
 }
 void getAmount() {
 	System.out.println("Account Name="+this.name+"\n Account Balance="+this.balance);
 }
 void withDrawAmount(int amount) {
-	this.balance=amount;
+	this.balance=this.balance-amount;
 }
 }
 	        

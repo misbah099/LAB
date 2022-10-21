@@ -21,13 +21,13 @@ void createAccount(int accno,String name,long bal) {
 	this.name=name;
 	this.balance=bal;
 }
-void addAmount(int amount) {
+void addAmount(int amount) {//adding amount to the account
 	this.balance=this.balance+amount;
 }
-void getAmount() {
+void getAmount() {//show the account detail 
 	System.out.println("Account Name="+this.name+"\n Account Balance="+this.balance);
 }
-void withDrawAmount(int amount) {
+void withDrawAmount(int amount) {//withdraw the amount from the balance
 	this.balance=this.balance-amount;
 }
 }

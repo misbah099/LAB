@@ -28,6 +28,7 @@ public class BankDaoImpl {
 		p=sc.nextLong();
 		Bank b=new Bank();
 		b.setName(n);
+		b.setIfsccode(c);
 		b.setDeposit(d);
 		b.setEmail(e);
 		b.setPhone(p);

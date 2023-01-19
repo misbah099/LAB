@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/data/jpa
+ https://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+  <bean id="cin" class="com.Spring.Lab.entity.Cinema">
+ <constructor-arg value="111"/>
+ <constructor-arg value="Carnival"/>
+ <constructor-arg>
+ <list>
+ <value>Antman and the wasp</value>
+  <value>Endgame</value>
+   <value>Thor Love and Thunder</value>
+ </list>
+ </constructor-arg>
+ </bean>
+  <bean id="res" class="com.Spring.Lab.entity.Residence">
+ <constructor-arg value="Asansol"/>
+ <constructor-arg value="WB"/>
+ <constructor-arg value="India"/>
+ </bean>
+  <bean id="wor" class="com.Spring.Lab.entity.Worker">
+   <constructor-arg type="int" value="10"/>
+ <constructor-arg value="Misbah"/>
+  <constructor-arg> <ref bean="res"/>  </constructor-arg>
+ </bean>
+
+ <bean id="B" class="com.Spring.Lab.entity.Classroom">
+ <constructor-arg type="int" value="12"/>
+ </bean>
+  <bean id="C" class="com.Spring.Lab.entity.Classroom">
+ <constructor-arg value="Misbah"/>
+ </bean>
+  <bean id="M" class="com.Spring.Lab.entity.Classroom">
+   <constructor-arg value="2"/>
+ <constructor-arg value="Misbah"/>
+ </bean>
+ </beans>
